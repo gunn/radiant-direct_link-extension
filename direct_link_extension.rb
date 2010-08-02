@@ -4,7 +4,9 @@ class DirectLinkExtension < Radiant::Extension
   url "http://gunn.co.nz/"
   
   def activate
-    # 
+    # this is how we do it in 0.8.x anyway:
+    node_region = admin.page.index["node"]
+    node_region[node_region.index("status_column")] = "admin/pages/status_column"
   end
   
 end
