@@ -11,6 +11,6 @@ OR
 
   git submodule add git://github.com/gunn/radiant-direct_link-extension.git vendor/extensions/direct_link
 
-<br/>
-<br/>
+
+
 Arthur Gunn, 2010.
