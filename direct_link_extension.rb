@@ -5,8 +5,11 @@ class DirectLinkExtension < Radiant::Extension
   
   def activate
     # this is how we do it in 0.8.x anyway:
-    node_region = admin.page.index["node"]
-    node_region[node_region.index("status_column")] = "admin/pages/status_column"
+    node = admin.page.index["node"]
+    node[node.index("status_column")] = "admin/pages/status_column"
+    
+    main = admin.page.edit["main"]
+    main[main.index("edit_header")] = "admin/pages/edit_header"
   end
   
 end

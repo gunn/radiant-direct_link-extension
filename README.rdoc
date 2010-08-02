@@ -1,8 +1,16 @@
 == Direct Link
 
-A very simple extension. Install it into vendor/extensions and enjoy the direct links to your pages. That's it!
+A very simple extension. Adds links at the top of each edit page, and makes the page status' in the main page, links to that page in the live site. If a page is draft, hidden, or reviewed, the link will point to the dev subdomain e.g. dev.example.com/page
 
-TODO: actually create extension.
+=== Installation
+Install it into vendor/extensions and enjoy the direct links to your pages. That's it!
+  
+  script/extension install direct_link
 
+OR
 
-Arthur Gunn 2010.
+  git submodule add git://github.com/gunn/radiant-direct_link-extension.git vendor/extensions/direct_link
+
+<br/>
+<br/>
+Arthur Gunn, 2010.
