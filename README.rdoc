@@ -1,0 +1,8 @@
+=== Direct Link
+
+A very simple extension. Install it into vendor/extensions and enjoy the direct links to your pages. That's it!
+
+TODO: actually create extension.
+
+
+Arthur Gunn 2010.
