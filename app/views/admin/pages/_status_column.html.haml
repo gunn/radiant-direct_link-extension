@@ -3,4 +3,4 @@
     - if page.status.name.downcase == "published"
       = link_to page.status.name, page.url, :style => "color: inherit;"
     - else "draft"
-      = link_to page.status.name, "http://#{Radiant::Config['dev.host']||'dev'}.#{request.domain}#{(request.port==80 ? nil : ":#{request.port}")}#{page.url}", :style => "color: inherit;"
+      = link_to page.status.name, "http://#{Radiant::Config['dev.host']||('dev.'+request.domain)}#{( request.port==80 ? nil : ":#{request.port}")}#{@page.url}", :style => "color: inherit;"

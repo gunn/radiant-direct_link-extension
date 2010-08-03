@@ -1,7 +1,7 @@
 %h1
   Edit Page
-  %span{:style => "font-size:0.5em"}
+  %span{:style => "font-size:0.85em"}
     - if @page.status.name.downcase == "published"
       = "("+link_to(@page.status.name, @page.url)+")"
     - else "draft"
-      = "("+link_to(@page.status.name, "http://#{Radiant::Config['dev.host']||'dev'}.#{request.domain}#{( request.port==80 ? nil : ":#{request.port}")}#{@page.url}")+")"
+      = "("+link_to(@page.status.name, "http://#{Radiant::Config['dev.host']||('dev.'+request.domain)}#{( request.port==80 ? nil : ":#{request.port}")}#{@page.url}")+")"
